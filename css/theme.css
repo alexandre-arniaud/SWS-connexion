@@ -1,0 +1,103 @@
+@font-face {
+        font-family: Marianne;
+        src : url(../font/marianne-bold-webfont.ttf);
+}
+
+@font-face {
+        font-family: Segoe;
+        src : url(../font/seguibl.ttf);
+}
+
+
+body{
+    background: #EBEBEB;
+    background-image: url(../assets/background.png);
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: cover;
+}
+
+h3 {
+    margin: 0px;
+    padding-bottom: 0px;
+
+    font-family: 'Segoe';
+    color: #282828;
+    font-size: 50px;
+    text-align: center;
+}
+
+p {
+    margin: 0px;
+    padding-bottom: 280px;
+
+    font-family: 'Segoe';
+    color: #0098FF;
+    font-size: 30px;
+    text-align: center;
+}
+
+#connexion {
+  display: inline-grid;
+  margin: 0 auto;
+  width: 100%;
+
+  font-family: 'Marianne';
+}
+
+b {
+  margin-top: 50px;
+  margin-left: 25%;
+  font-size: 20px;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 22px 20px;
+    margin: 0px 0;
+    margin-bottom: 50px;
+    margin-left: 25%;
+    display: inline-block;
+    border: 0px;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    background-color: #282828;
+    opacity: 0.20;
+}
+
+input[type=password]{
+  width: 50%;
+  padding: 22px 20px;
+  margin-top: 0px 0;
+  margin-left: 25%;
+  display: inline-block;
+  border: 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  background-color: #282828;
+  opacity: 0.20;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: rgba(0, 152, 255, 0.34);
+    color: #282828;
+    padding: 22px 20px;
+    margin: 100px 0;
+    margin-left: 25%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Segoe';
+    font-size: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: #0098FF;
+    border: 1px solid #0098FF;
+    border-radius: 10px;
+
+}
