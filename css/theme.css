@@ -13,8 +13,29 @@ body{
     background: #EBEBEB;
     background-image: url(../assets/background.png);
     background-repeat: no-repeat;
-    background-position: initial;
-    background-size: cover;
+    background-size: initial;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-position: center;
+  }
+}
+
+.bg-logo{
+    background-image: url(../assets/background2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    padding-bottom: 12.5% ;
+}
+
+@media (max-width: 600px) {
+  .bg-logo {
+    background-position: center;
+    background-size: 100%;
+  }
 }
 
 h3 {
