@@ -13,11 +13,13 @@ body{
     background: #EBEBEB;
     background-image: url(../assets/background.png);
     background-repeat: no-repeat;
+    background-position: initial;
     background-size: cover;
 }
 
 h3 {
     margin: 0px;
+    padding-bottom: 0px;
 
     font-family: 'Segoe';
     color: #282828;
@@ -35,7 +37,7 @@ p {
     text-align: center;
 }
 
-#connexion {
+.container {
   display: inline-grid;
   margin: 0 auto;
   width: 100%;
@@ -44,20 +46,20 @@ p {
 }
 
 b {
-  margin-top: 50px;
-  margin-left: 25%;
+  margin: 50px 0px 0px 25%;
   font-size: 20px;
 }
 
 input[type=text] {
+    outline: 0;
+    border: none;
+
     width: 50%;
     padding: 22px 20px;
-    margin: 0px 0;
-    margin-bottom: 50px;
-    margin-left: 25%;
+  margin: 0px 0px 50px 25%;
     display: inline-block;
     border: 0px;
-    border-radius: 10px;
+    border-radius: 30px;
     box-sizing: border-box;
 
     background-color: #282828;
@@ -65,13 +67,15 @@ input[type=text] {
 }
 
 input[type=password]{
+  outline: 0;
+  border: none;
+
   width: 50%;
   padding: 22px 20px;
-  margin-top: 0px 0;
-  margin-left: 25%;
+  margin: 0px 0px 0px 25%;
   display: inline-block;
   border: 0px;
-  border-radius: 10px;
+  border-radius: 30px;
   box-sizing: border-box;
 
   background-color: #282828;
@@ -79,25 +83,29 @@ input[type=password]{
 }
 
 input[type=submit] {
+    outline: 0;
+    border: none;
+
     width: 50%;
     background-color: rgba(0, 152, 255, 0.34);
     color: #282828;
     padding: 22px 20px;
-    margin-top: 100px;
-    margin-bottom: 10px;
-    margin-left: 25%;
+    margin: 100px 0px 25% 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     font-family: 'Segoe';
     font-size: 20px;
 }
 
 input[type=submit]:hover {
+    outline: 0;
+    border: none;
+
     background-color: white;
     color: #0098FF;
     border: 1px solid #0098FF;
-    border-radius: 10px;
+    border-radius: 30px;
 
 }
 
