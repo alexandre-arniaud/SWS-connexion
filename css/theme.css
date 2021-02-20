@@ -1,190 +1,174 @@
 @font-face {
-        font-family: Marianne;
-        src : url(../font/marianne-bold-webfont.ttf);
+	font-family: Marianne;
+	src: url(../font/marianne-bold-webfont.ttf);
 }
 
 @font-face {
-        font-family: Segoe;
-        src : url(../font/seguibl.ttf);
+	font-family: Segoe;
+	src: url(../font/seguibl.ttf);
 }
 
-
-body{
-    background: #EBEBEB;
-    background-image: url(../assets/background.png);
-    background-repeat: no-repeat;
-    background-size: initial;
-
-    overflow: hidden;
-}
-
-@media (max-width: 600px) {
-  body {
-    background-position: center;
-  }
-}
-
-.bg-logo{
-    background-image: url(../assets/background2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-
-    padding-bottom: 12.5% ;
+body {
+	background: #EBEBEB;
+	background-image: url(../assets/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
 }
 
 @media (max-width: 600px) {
-  .bg-logo {
-    background-position: center;
-    background-size: 100%;
-  }
+	body {
+		background-position: center;
+	}
+}
+
+.bg-logo {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(../assets/background2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	padding-bottom: 12.5%;
+}
+
+@media (max-width: 600px) {
+	.bg-logo {
+		background-position: center;
+		background-size: 100%;
+	}
 }
 
 h3 {
-    margin: 0%;
-    padding-bottom: 0%;
-
-    font-family: 'Segoe';
-    color: #282828;
-    font-size: 3.125em;
-    text-align: center;
+	margin: 0%;
+	padding-bottom: 0%;
+	font-family: 'Segoe';
+	color: #282828;
+	font-size: 3.125em;
+	text-align: center;
 }
 
 @media (max-width: 600px) {
-  h3 {
-      margin-top: 1.5em;
-      font-size: 1.875em;
-  }
+	h3 {
+		margin-top: 1.5em;
+		font-size: 1.875em;
+	}
 }
 
 p {
-    margin: 0%;
-    padding-bottom: 1em;
-
-    font-family: 'Segoe';
-    color: #0098FF;
-    font-size: 2.5em;
-    text-align: center;
+	margin: 0%;
+	font-family: 'Segoe';
+	color: #0098FF;
+	font-size: 2.5em;
+	text-align: center;
 }
 
 @media (max-width: 600px) {
-  p {
-      padding-bottom: 7em;
-      font-size: 1.5625em;
-  }
+	p {
+		font-size: 1.5625em;
+	}
 }
 
-.container {
+.flex {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+	margin: 0 auto;
+
+  width: 100%;
+  height: 50vh;
+}
+
+.flex label {
+  font-family: 'Marianne';
+  font-weight: bolder;
+  font-size: large;
+
+  text-transform: uppercase;
+
+  align-self: flex-start;
+  width: 100%;
+}
+
+.group {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  width: 100%;
+  align-items: center;
 
-  font-family: 'Marianne';
+  min-width: 80%;
 }
 
 b {
-  margin-left: 25%;
-  font-size: 1.25em;
+	margin-left: 25%;
+	font-size: 1.25em;
 }
 
 @media (max-width: 600px) {
-  b {
-    margin-left: 12.5%;
-    font-size: 0.8125em;
-  }
+	b {
+		margin-left: 12.5%;
+		font-size: 0.8125em;
+	}
 }
 
-input[type=text] {
-    outline: 0;
-    border: none;
-
-    width: 50%;
-    padding: 1.5% 2%;
-    margin: 0px 0px 5% 25%;
-    display: inline-block;
-    border-radius: 30px;
-    box-sizing: border-box;
-
-    background-color: #282828;
-    opacity: 0.20;
-}
-
-@media (max-width: 600px) {
-  input[type=text] {
-      width: 75%;
-      padding: 1.5% 2%;
-      margin: 0% 0% 25% 12.5%;
-  }
-}
-
-input[type=password]{
+input {
   outline: 0;
-  border: none;
+	border: none;
 
-  width: 50%;
+	width: 100%;
   padding: 1.5% 2%;
-  margin: 0% 0% 0% 25%;
-  display: inline-block;
-  border-radius: 30px;
-  box-sizing: border-box;
 
-  background-color: #282828;
-  opacity: 0.20;
+  border-radius: 30px;
+
+  transition: color 0.5s, background-color 0.5s;
 }
 
-@media (max-width: 600px) {
-  input[type=password]{
-    width: 75%;
-    padding: 1.5% 2%;
-    margin: 0% 0% 30% 12.5%;
-  }
+input[type="text"],
+input[type="password"] {
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #282828;
+	opacity: 0.3;
+	font-family: monospace;
+	font-size: large;
+	color: white;
 }
 
 input[type=submit] {
-    outline: 0;
-    border: none;
+  width: 60%;
 
-    width: 50%;
-    background-color: rgba(0, 152, 255, 0.34);
-    color: #282828;
-    padding: 1.5% 2%;
-    margin: 5% 0% 1% 25%;
-    border-radius: 30px;
-    cursor: pointer;
-    font-family: 'Segoe';
-    font-size: 1.25em;
+	background-color: rgba(0, 152, 255, 0.34);
+	color: #282828;
+	padding: 1.5% 2%;
+	cursor: pointer;
+	font-family: 'Segoe';
+	font-size: 1.25em;
 }
 
 @media (max-width: 600px) {
-  input[type=submit] {
-      padding: 3%;
-      font-size: 0.93em;
-      margin: 00% 0% 5% 25%;
-  }
+	input[type=submit] {
+		padding: 3%;
+		font-size: 0.93em;
+	}
 }
 
 input[type=submit]:hover {
-    outline: 0;
-
-    background-color: white;
-    color: #0098FF;
-    border: 1px solid #0098FF;
-    border-radius: 30px;
+	background-color: white;
+	color: #0098FF;
 }
 
 h5 {
-    margin: 0%;
-    padding-bottom: 0%;
-
-    font-family: 'Segoe';
-    color: #282828;
-    font-size: 1.125em;
-    text-align: center;
+	margin: 0%;
+	padding-bottom: 0%;
+	font-family: 'Segoe';
+	color: #282828;
+	font-size: 1.125em;
+	text-align: center;
 }
 
 @media (max-width: 600px) {
-  h5 {
-      font-size: 0.81em;
-  }
+	h5 {
+		font-size: 0.81em;
+	}
 }
