@@ -13,13 +13,11 @@ body{
     background: #EBEBEB;
     background-image: url(../assets/background.png);
     background-repeat: no-repeat;
-    background-position: initial;
     background-size: cover;
 }
 
 h3 {
     margin: 0px;
-    padding-bottom: 0px;
 
     font-family: 'Segoe';
     color: #282828;
