@@ -1,0 +1,177 @@
+@font-face {
+	font-family: Marianne;
+	src: url(../font/marianne-bold-webfont.ttf);
+}
+
+@font-face {
+	font-family: Segoe;
+	src: url(../font/seguibl.ttf);
+}
+
+body {
+	background: #282828;
+	background-image: url(../assets/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+@media (max-width: 600px) {
+	body {
+		background-position: center;
+	}
+}
+
+.bg-logo {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(../assets/background2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	padding-bottom: 12.5%;
+}
+
+@media (max-width: 600px) {
+	.bg-logo {
+		background-position: center;
+		background-size: 100%;
+	}
+}
+
+h3 {
+	margin: 0%;
+	padding-bottom: 0%;
+	font-family: 'Segoe';
+	color: #DCDCDC;
+	font-size: 3.125em;
+	text-align: center;
+}
+
+@media (max-width: 600px) {
+	h3 {
+		margin-top: 1.5em;
+		font-size: 1.875em;
+	}
+}
+
+p {
+	margin: 0%;
+	font-family: 'Segoe';
+	color: #0098FF;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+@media (max-width: 600px) {
+	p {
+		font-size: 1.5625em;
+	}
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+	margin: 0 auto;
+
+  width: 100%;
+  height: 50vh;
+}
+
+.flex label {
+  font-family: 'Marianne';
+  font-weight: bolder;
+  font-size: large;
+  color: #DCDCDC;
+
+  text-transform: uppercase;
+
+  align-self: flex-start;
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-width: 80%;
+}
+
+b {
+	margin-left: 25%;
+	font-size: 1.25em;
+}
+
+@media (max-width: 600px) {
+	b {
+		margin-left: 12.5%;
+		font-size: 0.8125em;
+	}
+}
+
+input {
+  outline: 0;
+	border: none;
+
+	width: 100%;
+  padding: 1.5% 2%;
+
+  border-radius: 30px;
+
+  transition: color 0.5s, background-color 0.5s;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #000000;
+  opacity: 0.3;
+  font-family: monospace;
+  font-size: large;
+  color: white;
+}
+
+input[type=submit] {
+  width: 60%;
+
+  background-color: rgba(0, 152, 255, 0.34);
+  color: #DCDCDC;
+  padding: 1.5% 2%;
+  cursor: pointer;
+  font-family: 'Segoe';
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+	input[type=submit] {
+		padding: 3%;
+		font-size: 0.93em;
+	}
+}
+
+input[type=submit]:hover {
+	background-color: white;
+	color: #0098FF;
+}
+
+h5 {
+  margin: 0%;
+  padding-bottom: 0%;
+  font-family: 'Segoe';
+  color: #DCDCDC;
+  font-size: 1.125em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+	h5 {
+		font-size: 0.81em;
+	}
+}
